@@ -3,68 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Streaml ConnectIN LinkedIn Message Assist</title>
+  <title>Privacy Policy — ConnectIN Social Media Assist</title>
   <style>
-    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 840px; margin: 2rem auto; padding: 0 1rem; color: #111; }
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #111; }
     h1, h2, h3 { line-height: 1.25; margin: 1.2rem 0 0.6rem; }
     p { margin: 0.6rem 0; }
     ul { margin: 0.4rem 0 0.8rem 1.2rem; }
-    code, pre { background: #f6f8fa; padding: 0.2rem 0.3rem; border-radius: 4px; }
-    pre { padding: 1rem; overflow: auto; }
+    code { background: #f6f8fa; padding: 0.15rem 0.3rem; border-radius: 4px; }
     a { color: #0a66c2; }
     hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-    .muted { color: #666; }
+    .muted { color: #666; font-size: 0.9em; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — Streaml ConnectIN LinkedIn Message Assist</h1>
-  <p class="muted"><em>Last updated: 2025-08-13</em></p>
+  <h1>Privacy Policy — ConnectIN Social Media Assist</h1>
+  <p class="muted"><em>Last updated: 2025-08-26</em></p>
 
-  <p><strong>Streaml ConnectIN LinkedIn Message Assist</strong> is a Chrome extension that helps users send a saved default message to profiles on linkedin.com.
-  This extension is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation.</p>
+  <p><strong>ConnectIN Social Media Assist</strong> is a Chrome extension that helps users automate sending and commenting on social media (LinkedIn, Twitter/X, Instagram) with AI-generated text.  
+  This extension is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation, Twitter Inc. (X), or Instagram/Meta.</p>
 
   <h2>Data Collection</h2>
-  <p><strong>We do not collect, transmit, or sell personal data.</strong></p>
-  <p>The extension stores only two keys in the browser’s local storage:</p>
+  <p><strong>We do not collect, transmit, or sell any personal data.</strong></p>
+  <p>The extension stores only minimal configuration in the browser’s local storage, such as:</p>
   <ul>
-    <li><code>popupMode</code> — whether the assistant is “Open” or “Closed”.</li>
+    <li><code>popupMode</code> — whether automation is “Open” or “Closed”.</li>
   </ul>
-  <p>These values stay on the user’s device and are not transmitted to our servers or third parties by this extension.</p>
 
   <h2>Permissions &amp; Purpose</h2>
   <ul>
-    <li><strong>tabs</strong> — open linkedin.com profile pages in background tabs.</li>
-    <li><strong>scripting</strong> — inject a small script to open the Message composer and send the saved default message.</li>
-    <li><strong>storage</strong> — save the two settings listed above.</li>
-    <li><strong>host_permissions: https://www.linkedin.com/</strong> — restricts operation to LinkedIn only.</li>
-    <li><strong>externally_connectable</strong> — allows a user’s Streaml page (on allowed origins) to send a list of profile URLs to the extension. This is <em>data pushed by the user</em>; the extension does not contact any remote servers on its own.</li>
+    <li><strong>tabs</strong> — open profile/post URLs in background tabs to perform outreach.</li>
+    <li><strong>scripting</strong> — inject scripts that read profile/post context and fill in messages or comments.</li>
+    <li><strong>storage</strong> — save user preferences (API key, persona, mode, logs toggle).</li>
+    <li><strong>downloads</strong> — allow users to export logs of their own campaign activity.</li>
+    <li><strong>activeTab</strong> — support one-click actions on the currently open tab.</li>
+    <li><strong>host_permissions</strong> — restricted only to <code>linkedin.com</code>, <code>x.com / twitter.com</code>, <code>instagram.com</code>, and the AI API domain.</li>
   </ul>
+  <p>Each permission is essential for the extension’s single purpose of outreach automation. No broader access is requested.</p>
 
   <h2>External Services</h2>
-  <p>This extension does not use analytics, advertising, or external APIs. It does not transmit or receive any personal data other than the URLs you explicitly send from your Streaml page to the extension.</p>
+  <p>The extension does not use analytics or advertising networks. If the user enables AI features, requests are sent directly from their browser to the AI provider using the API key they supplied. We do not proxy, log, or store these requests.</p>
 
   <h2>Security</h2>
   <ul>
-    <li>Data stays on the user’s device via <code>chrome.storage.local</code>.</li>
-    <li>Communication from Streaml relies on Chrome’s <code>externally_connectable</code> security model which restricts allowed origins via the extension manifest.</li>
+    <li>Data remains on the user’s device via <code>chrome.storage.local</code>.</li>
+    <li>Only the user’s browser communicates with social media sites and the AI API.</li>
+    <li>We follow the Chrome Extensions security model: scripts run only on declared host sites.</li>
   </ul>
 
   <h2>Data Retention &amp; Deletion</h2>
   <ul>
-    <li>Settings remain on the device until the user uninstalls the extension or clears extension data via browser settings.</li>
-    <li>Uninstalling the extension deletes all stored data.</li>
+    <li>Settings persist until the user clears extension data or uninstalls the extension.</li>
+    <li>Uninstalling the extension deletes all locally stored data.</li>
   </ul>
 
   <h2>Children’s Privacy</h2>
-  <p>This extension is not directed to children under 13 and does not knowingly collect personal data from children.</p>
+  <p>This extension is not directed to children under 13 and does not knowingly collect data from children.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>We may update this policy. We will update the “Last updated” date above when changes are made.</p>
+  <p>We may update this policy. Any updates will be posted here, with the “Last updated” date adjusted accordingly.</p>
 
   <h2>Contact</h2>
-  <p>If you have questions about privacy, please contact: <strong>mpvwork06@gmail.com</strong>.</p>
+  <p>If you have privacy questions, please contact: <strong>mpvwork06@gmail.com</strong></p>
 
   <hr>
-  <p class="muted">© 2025 LinkedIn Auto Message Assist</p>
+  <p class="muted">© 2025 ConnectIN Social Media Assist</p>
 </body>
 </html>
