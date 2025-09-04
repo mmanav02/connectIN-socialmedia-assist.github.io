@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — ConnectIN Social Media Assist</title>
+  <title>Privacy Policy — ConnectIN LinkedIn Assist</title>
   <style>
     body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #111; }
     h1, h2, h3 { line-height: 1.25; margin: 1.2rem 0 0.6rem; }
@@ -16,34 +16,33 @@
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — ConnectIN Social Media Assist</h1>
-  <p class="muted"><em>Last updated: 2025-08-29</em></p>
+  <h1>Privacy Policy — ConnectIN LinkedIn Assist</h1>
+  <p class="muted"><em>Last updated: 2025-09-04</em></p>
 
-  <p><strong>Single purpose.</strong> This extension’s single purpose is to assist <em>user-initiated</em> messaging and connection requests on LinkedIn (and X) using user-provided templates. It is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation or X (Twitter).</p>
+  <p><strong>Single purpose.</strong> This extension’s single purpose is to <em>assist</em> with user-initiated messaging and connection requests on LinkedIn using user-provided templates. It is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation.</p>
 
   <h2>Data Collection</h2>
   <p><strong>We do not collect, transmit, or sell personal data.</strong></p>
   <p>The extension stores only minimal configuration in the browser’s local storage, for example:</p>
   <ul>
-    <li><code>popupMode</code> — whether automation is “Open” or “Closed”.</li>
+    <li>Preferred mode (manual or assist).</li>
     <li>Saved message template/persona.</li>
-    <li>Optional AI API key (if the user enables AI messaging).</li>
+    <li>Optional AI API key (if the user enables AI assistance).</li>
     <li>Optional log/export toggle.</li>
   </ul>
   <p>These values remain on the user’s device in <code>chrome.storage.local</code> and are <strong>not</strong> transmitted to our servers.</p>
 
   <h2>Permissions &amp; Purpose</h2>
   <ul>
-    <li><strong>tabs</strong> — open profile/post URLs in background tabs and detect when pages are ready for user confirmation.</li>
-    <li><strong>scripting</strong> — inject a small script on LinkedIn/X to prompt for confirmation, fill the message, and click send.</li>
+    <li><strong>tabs</strong> — open LinkedIn profile URLs in background tabs and detect when pages are ready for user confirmation.</li>
+    <li><strong>scripting</strong> — insert a small script on LinkedIn to assist with filling the message or connect form.</li>
     <li><strong>storage</strong> — save the local preferences listed above.</li>
     <li><strong>downloads</strong> — let the user export their own activity log on demand.</li>
     <li><strong>host_permissions</strong> — limited to:
       <ul>
         <li><code>https://www.linkedin.com/*</code></li>
-        <li><code>https://x.com/*</code> (and/or <code>https://twitter.com/*</code> if applicable)</li>
       </ul>
-      to read the page and place the message.</li>
+      so the extension can assist on LinkedIn pages only.</li>
     <li><strong>externally_connectable</strong> — limited to <code>https://app.streaml.app/*</code> so that only our site can pass user-provided URLs/messages to the extension.</li>
   </ul>
   <p>Each permission directly supports the extension’s single purpose. No broader access is requested.</p>
@@ -54,7 +53,7 @@
   <h2>Security</h2>
   <ul>
     <li>All preferences remain on the device via <code>chrome.storage.local</code>.</li>
-    <li>Only the user’s browser communicates with LinkedIn/X and (optionally) the AI API.</li>
+    <li>Only the user’s browser communicates with LinkedIn and (optionally) the AI API.</li>
     <li>Scripts run only on declared host sites as enforced by Chrome Extensions.</li>
   </ul>
 
@@ -74,6 +73,6 @@
   <p>If you have privacy questions, please contact: <strong>mpvwork06@gmail.com</strong></p>
 
   <hr />
-  <p class="muted">© 2025 ConnectIN Social Media Assist</p>
+  <p class="muted">© 2025 ConnectIN LinkedIn Assist</p>
 </body>
 </html>
