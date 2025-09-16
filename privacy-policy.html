@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — ConnectIN LinkedIn Assist</title>
+  <title>Privacy Policy — Streaml ConnectIN Social Media Assist</title>
   <style>
     body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #111; }
     h1, h2, h3 { line-height: 1.25; margin: 1.2rem 0 0.6rem; }
@@ -16,45 +16,57 @@
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — ConnectIN LinkedIn Assist</h1>
-  <p class="muted"><em>Last updated: 2025-09-04</em></p>
+  <h1>Privacy Policy — Streaml ConnectIN Social Media Assist</h1>
+  <p class="muted"><em>Last updated: February 25, 2025</em></p>
 
-  <p><strong>Single purpose.</strong> This extension’s single purpose is to <em>assist</em> with user-initiated messaging and connection requests on LinkedIn using user-provided templates. It is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation.</p>
+  <p><strong>Single purpose.</strong> This extension's purpose is to <em>assist</em> with user-initiated messaging and connection requests on LinkedIn and X (Twitter) using user-provided templates and content from the Streaml platform. It is <strong>unofficial</strong> and not affiliated with or endorsed by LinkedIn Corporation, X (Twitter), or Meta.</p>
 
   <h2>Data Collection</h2>
-  <p><strong>We do not collect, transmit, or sell personal data.</strong></p>
-  <p>The extension stores only minimal configuration in the browser’s local storage, for example:</p>
+  <p><strong>We do not collect, transmit, or sell any personal data.</strong></p>
+  <p>The extension stores only minimal configuration in the browser's local storage, for example:</p>
   <ul>
-    <li>Preferred mode (manual or assist).</li>
-    <li>Saved message template/persona.</li>
-    <li>Optional AI API key (if the user enables AI assistance).</li>
-    <li>Optional log/export toggle.</li>
+    <li>Extension mode preference (open or closed).</li>
+    <li>Activity logs for user review and export.</li>
+    <li>Queue status and processing state.</li>
   </ul>
-  <p>These values remain on the user’s device in <code>chrome.storage.local</code> and are <strong>not</strong> transmitted to our servers.</p>
+  <p>These values remain on the user's device in <code>chrome.storage.local</code> and are <strong>never</strong> transmitted to our servers or any third parties.</p>
+  
+  <p><strong>Important:</strong> All messaging content, profile URLs, and personal information are processed locally on your device. We have no access to your messages, contacts, or any data you interact with through this extension.</p>
 
   <h2>Permissions &amp; Purpose</h2>
   <ul>
-    <li><strong>tabs</strong> — open LinkedIn profile URLs in background tabs and detect when pages are ready for user confirmation.</li>
-    <li><strong>scripting</strong> — insert a small script on LinkedIn to assist with filling the message or connect form.</li>
-    <li><strong>storage</strong> — save the local preferences listed above.</li>
-    <li><strong>downloads</strong> — let the user export their own activity log on demand.</li>
+    <li><strong>scripting</strong> — inject scripts into LinkedIn and X (Twitter) pages to assist with filling message forms and connection requests. Scripts only run on the specific social media platforms.</li>
+    <li><strong>storage</strong> — save local preferences and activity logs on your device only.</li>
+    <li><strong>downloads</strong> — enable users to export their own activity logs on demand.</li>
     <li><strong>host_permissions</strong> — limited to:
       <ul>
-        <li><code>https://www.linkedin.com/*</code></li>
+        <li><code>https://www.linkedin.com/*</code> — for LinkedIn messaging and connection features</li>
+        <li><code>*://x.com/*</code> — for X (Twitter) direct messaging</li>
+        <li><code>*://twitter.com/*</code> — for Twitter legacy URL support</li>
+        <li><code>https://app.streaml.app/*</code> — for integration with Streaml platform</li>
       </ul>
-      so the extension can assist on LinkedIn pages only.</li>
-    <li><strong>externally_connectable</strong> — limited to <code>https://app.streaml.app/*</code> so that only our site can pass user-provided URLs/messages to the extension.</li>
+      The extension can only operate on these specific domains.</li>
   </ul>
-  <p>Each permission directly supports the extension’s single purpose. No broader access is requested.</p>
+  <p>Each permission directly supports the extension's functionality. No broader access is requested, and all operations require explicit user confirmation.</p>
 
   <h2>External Services</h2>
-  <p>No analytics or advertising services are used. If the user enables AI features, requests are sent directly from their browser to the AI provider using the user’s own API key. We do not proxy, log, or store these requests.</p>
+  <p><strong>No external services are used.</strong> This extension does not use analytics, advertising services, or any third-party data collection services. All functionality operates locally on your device.</p>
+  
+  <p>The extension only communicates with:</p>
+  <ul>
+    <li><strong>LinkedIn</strong> — for messaging and connection features (user-initiated only)</li>
+    <li><strong>X (Twitter)</strong> — for direct messaging (user-initiated only)</li>
+    <li><strong>Streaml Platform</strong> — for receiving profile URLs and messages (user-initiated only)</li>
+  </ul>
+  <p>We do not proxy, log, or store any of these communications.</p>
 
   <h2>Security</h2>
   <ul>
-    <li>All preferences remain on the device via <code>chrome.storage.local</code>.</li>
-    <li>Only the user’s browser communicates with LinkedIn and (optionally) the AI API.</li>
+    <li>All data and preferences remain on your device via <code>chrome.storage.local</code>.</li>
+    <li>Only your browser communicates directly with LinkedIn, X (Twitter), and Streaml.</li>
     <li>Scripts run only on declared host sites as enforced by Chrome Extensions.</li>
+    <li>All actions require explicit user confirmation before execution.</li>
+    <li>No data is transmitted to our servers or any third parties.</li>
   </ul>
 
   <h2>Data Retention &amp; Deletion</h2>
@@ -73,6 +85,6 @@
   <p>If you have privacy questions, please contact: <strong>mpvwork06@gmail.com</strong></p>
 
   <hr />
-  <p class="muted">© 2025 ConnectIN LinkedIn Assist</p>
+  <p class="muted">© 2025 Streaml ConnectIN Social Media Assist</p>
 </body>
 </html>
