@@ -35,7 +35,7 @@
 
   <h2>Permissions &amp; Purpose</h2>
   <ul>
-    <li><strong>scripting</strong> — inject scripts into LinkedIn and X (Twitter) pages to assist with filling message forms and connection requests. Scripts only run on the specific social media platforms.</li>
+    <li><strong>scripting</strong> — inject scripts into LinkedIn, Instagram, and X (Twitter) pages to assist with filling message forms and connection requests. Scripts only run on the specific social media platforms.</li>
     <li><strong>storage</strong> — save local preferences and activity logs on your device only.</li>
     <li><strong>downloads</strong> — enable users to export their own activity logs on demand.</li>
     <li><strong>host_permissions</strong> — limited to:
@@ -43,6 +43,7 @@
         <li><code>https://www.linkedin.com/*</code> — for LinkedIn messaging and connection features</li>
         <li><code>*://x.com/*</code> — for X (Twitter) direct messaging</li>
         <li><code>*://twitter.com/*</code> — for Twitter legacy URL support</li>
+        <li><code>*://instagram.com/*</code> — for Instagram messaging features</li>
         <li><code>https://app.streaml.app/*</code> — for integration with Streaml platform</li>
       </ul>
       The extension can only operate on these specific domains.</li>
@@ -56,6 +57,7 @@
   <ul>
     <li><strong>LinkedIn</strong> — for messaging and connection features (user-initiated only)</li>
     <li><strong>X (Twitter)</strong> — for direct messaging (user-initiated only)</li>
+    <li><strong>Instagram</strong> — for messaging features (user-initiated only)</li>
     <li><strong>Streaml Platform</strong> — for receiving profile URLs and messages (user-initiated only)</li>
   </ul>
   <p>We do not proxy, log, or store any of these communications.</p>
@@ -63,7 +65,7 @@
   <h2>Security</h2>
   <ul>
     <li>All data and preferences remain on your device via <code>chrome.storage.local</code>.</li>
-    <li>Only your browser communicates directly with LinkedIn, X (Twitter), and Streaml.</li>
+    <li>Only your browser communicates directly with LinkedIn, X (Twitter), Instagram, and Streaml.</li>
     <li>Scripts run only on declared host sites as enforced by Chrome Extensions.</li>
     <li>All actions require explicit user confirmation before execution.</li>
     <li>No data is transmitted to our servers or any third parties.</li>
